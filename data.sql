@@ -25,8 +25,8 @@ DROP TABLE IF EXISTS `v1global_annual`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `v1global_annual` (
-  `Year` bigint DEFAULT NULL,
-  `Anomaly` double DEFAULT NULL
+  `year` bigint DEFAULT NULL,
+  `anomaly` double DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -48,8 +48,8 @@ DROP TABLE IF EXISTS `v1global_monthly`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `v1global_monthly` (
-  `Month` text,
-  `Anomaly` double DEFAULT NULL
+  `month` text,
+  `anomaly` double DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -71,8 +71,8 @@ DROP TABLE IF EXISTS `v1northern_annual`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `v1northern_annual` (
-  `Year` int DEFAULT NULL,
-  `Anomaly` double DEFAULT NULL
+  `year` int DEFAULT NULL,
+  `anomaly` double DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -94,8 +94,8 @@ DROP TABLE IF EXISTS `v1northern_monthly`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `v1northern_monthly` (
-  `Month` text,
-  `Anomaly` double DEFAULT NULL
+  `month` text,
+  `anomaly` double DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -118,7 +118,7 @@ DROP TABLE IF EXISTS `v1reconstruction`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `v1reconstruction` (
   `year` int DEFAULT NULL,
-  `T` geometry DEFAULT NULL
+  `t` geometry DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -139,8 +139,8 @@ DROP TABLE IF EXISTS `v1southern_annual`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `v1southern_annual` (
-  `Year` int DEFAULT NULL,
-  `Anomaly` double DEFAULT NULL
+  `year` int DEFAULT NULL,
+  `anomaly` double DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -162,8 +162,8 @@ DROP TABLE IF EXISTS `v1southern_monthly`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `v1southern_monthly` (
-  `Month` text,
-  `Anomaly` double DEFAULT NULL
+  `month` text,
+  `anomaly` double DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -239,7 +239,7 @@ DROP TABLE IF EXISTS `v2ice_core1`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `v2ice_core1` (
   `air_age` text,
-  `CO2` text
+  `co2` text
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -262,7 +262,7 @@ DROP TABLE IF EXISTS `v2ice_core2`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `v2ice_core2` (
   `air_age` text,
-  `CO2` text
+  `co2` text
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -285,7 +285,7 @@ DROP TABLE IF EXISTS `v2ice_core3`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `v2ice_core3` (
   `air_age` text,
-  `CO2` text
+  `co2` text
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -308,7 +308,7 @@ DROP TABLE IF EXISTS `v3carbon_data`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `v3carbon_data` (
   `years_ago` int DEFAULT NULL,
-  `Carbon dioxide (ppm)` text
+  `carbon dioxide (ppm)` text
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
