@@ -375,7 +375,7 @@ DROP TABLE IF EXISTS `v4emissions`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `v4emissions` (
-  `ï»¿year` int DEFAULT NULL,
+  `year` int DEFAULT NULL,
   `Afghanistan` double DEFAULT NULL,
   `Albania` double DEFAULT NULL,
   `Algeria` double DEFAULT NULL,
