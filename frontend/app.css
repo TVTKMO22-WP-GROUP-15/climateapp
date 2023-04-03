@@ -1,0 +1,214 @@
+body {
+      background-color: rgb(191, 201, 205);
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    color: rgb (44, 44, 44);
+}
+
+h1 {   
+    text-shadow: 1px 1px 2px black;
+    color: white;
+}
+
+h2 {
+    border-bottom: 2px solid rgba(119, 136, 153, 0.501);
+    padding-bottom: 6px;
+}
+
+.container {
+    background-color: white;
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 0 64px 64px 64px;
+}
+
+.tabs {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 16px;
+
+}
+
+.tabs li {
+    display: inline-block;
+    margin-right: 70px;
+}
+
+.tabs a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(44, 44, 44);
+}
+
+.tabs a:hover {
+    color:rebeccapurple;
+}
+
+.tabs a.active { 
+background-color: #fdf9fd;
+   border-radius: 50%;
+   padding: 7px 20px 7px 20px;
+}
+
+.tabs form {
+    padding-top: 17px;
+    font-weight: 400;
+}
+
+.tabs form button {
+    background-color: pink;
+    border-radius: 10%;
+}
+
+.picture {
+    width: 60%;
+}
+
+.picture img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.about {
+    line-height: 32px;
+    margin: 16px 0 80px 0;
+}
+
+
+.card-wrapper {
+    display: flex;
+    border-radius: 10px;
+    margin: 16px;
+}
+
+.card {
+background-color: white;
+    border-radius: 10px;
+    margin: 16px;
+    box-shadow: 0px 3px 11px 1px rgba(0, 0, 0, 0.1);
+    padding: 16px 32px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(44, 44, 44);
+    position: relative;
+}
+
+@media only screen and (max-widht: 750px) {
+    .card {
+        width: 100%;
+    }
+} 
+
+@media only screen and (max-widht: 600px) {
+    body {
+        padding: 16px;
+    }
+    .container {
+        padding: 0 16px;
+    }
+} 
+
+.card img {
+    height: 50%;
+    width: 80%;
+}
+
+.card a {
+    border: none;
+    color: white;
+    background-color: skyblue;
+    padding: 10px;
+    border-radius: 10%;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 15px;
+}
+
+.card .title {
+color: white;
+background-color: #4682B4;
+width: 100%;
+border-top-right-radius: 10px;
+border-top-left-radius: 10px;
+position: absolute;
+top: -48px;
+width: 100%;
+left: 0;
+text-transform: uppercase;
+}
+
+.register form {
+    width: 400px;
+    text-align: center;
+    padding: 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .register label {
+    font-size: 20px;
+    color: #666;
+    margin: 10px;
+    display: block;
+  }
+  .register input {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: montserrat;
+    color: #2c3e50;
+    font-size: 14px;
+  }
+  
+  .register button {
+    width: 100px;
+    background: #4682B4;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px 10px 45px;
+  }
+
+ .register button:hover {
+    transform: scale(1.05);
+}
+
+.chart {
+    height: 60vh;
+    width: 100%;
+    border: 2px solid lightgray;
+}
+
+.chart-info {
+    border: 1px solid #4682B4;
+    padding: 30px;
+    width: 50vw;
+    margin: 30px;
+}
+
+  footer {
+    padding-top: 35px
+  }
+  
